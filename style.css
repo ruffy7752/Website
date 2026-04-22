@@ -97,7 +97,7 @@ img {
 
 .site-nav a.active,
 .site-nav a:hover {
-  color: var(--primary);
+  color: #004aad;
 }
 
 .hero.hero-image {
