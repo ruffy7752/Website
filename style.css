@@ -54,18 +54,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 120px;
+  min-height: 92px;
   gap: 24px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 0;
 }
 
 .logo {
-  height: 95px;
+  height: 58px;
   width: auto;
 }
 
