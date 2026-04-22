@@ -156,9 +156,16 @@
     const hero = document.querySelector('.hero.hero-image');
     if (!hero) return;
 
-    const offset = window.pageYOffset;
-    const speed = 0.35;
-    hero.style.backgroundPosition = `center ${offset * speed}px`;
+    const rect = hero.getBoundingClientRect();
+    const heroTop = window.scrollY + rect.top;
+    const heroHeight = hero.offsetHeight;
+    const scrollY = window.scrollY;
+
+    if (scrollY <= heroTop + heroHeight) {
+      const speed = 0.35;
+      const yPos = (scrollY - heroTop) * speed;
+      hero.style.backgroundPosition = `center ${yPos}px`;
+    }
   });
 </script>
 </body>
