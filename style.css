@@ -101,7 +101,7 @@ img {
 }
 
 .hero.hero-image {
-  background: url('fahrzeug.png') center center / cover no-repeat;
+  background: url('fahrzeug.png') center 0 / cover no-repeat;
   color: var(--white);
   min-height: 112vh;
   position: relative;
@@ -379,8 +379,11 @@ h3 {
 }
 
 @media (max-width: 960px) {
-  .hero.hero-image {
-    background-attachment: scroll;
+  .hero-grid,
+  .grid-3,
+  .split,
+  .content-grid {
+    grid-template-columns: 1fr;
   }
 
   .nav-wrap {
@@ -409,7 +412,7 @@ h3 {
     min-height: 100vh;
   }
 
-  .site-header-overlay {
-    position: absolute;
+  .hero.hero-image {
+    background-position: center center !important;
   }
 }
