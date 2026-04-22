@@ -54,18 +54,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 92px;
-  gap: 24px;
+  min-height: 74px;
+  gap: 20px;
 }
 
 .brand {
   display: flex;
   align-items: center;
   padding: 0;
+  line-height: 1;
 }
 
 .logo {
-  height: 58px;
+  height: 46px;
   width: auto;
 }
 
@@ -333,12 +334,13 @@ h3 {
 
   .nav-wrap {
     align-items: flex-start;
-    padding: 16px 0;
+    padding: 12px 0;
     flex-direction: column;
   }
 
   .site-nav {
     gap: 14px;
+    flex-wrap: wrap;
   }
 
   .cta-box {
