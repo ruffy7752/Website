@@ -151,5 +151,15 @@
       </div>
     </div>
   </footer>
+  <script>
+  window.addEventListener('scroll', function () {
+    const hero = document.querySelector('.hero.hero-image');
+    if (!hero) return;
+
+    const offset = window.pageYOffset;
+    const speed = 0.35;
+    hero.style.backgroundPosition = `center ${offset * speed}px`;
+  });
+</script>
 </body>
 </html>
