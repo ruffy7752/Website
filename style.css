@@ -106,9 +106,10 @@ img {
 .hero-overlay {
   background: linear-gradient(
     90deg,
-    rgba(15, 23, 42, 0.78) 0%,
-    rgba(15, 23, 42, 0.55) 38%,
-    rgba(15, 23, 42, 0.22) 100%
+    rgba(15, 23, 42, 0.52) 0%,
+    rgba(15, 23, 42, 0.30) 32%,
+    rgba(15, 23, 42, 0.12) 62%,
+    rgba(15, 23, 42, 0.04) 100%
   );
   min-height: 720px;
   display: flex;
@@ -162,7 +163,7 @@ h3 {
 .lead {
   font-size: 19px;
   max-width: 720px;
-  color: rgba(255,255,255,0.94);
+  color: rgba(255,255,255,0.96);
 }
 
 .hero-actions {
@@ -192,7 +193,7 @@ h3 {
 
 .button-secondary {
   background: transparent;
-  border-color: rgba(255,255,255,0.28);
+  border-color: rgba(255,255,255,0.55);
   color: var(--white);
 }
 
@@ -204,10 +205,10 @@ h3 {
 }
 
 .hero-card {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
   padding: 30px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .hero-card h2 {
