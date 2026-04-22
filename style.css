@@ -140,7 +140,7 @@ img {
 }
 
 .hero .eyebrow {
-  color: #004aad;
+  color: #004aad !important;
 }
 
 h1, h2, h3 {
