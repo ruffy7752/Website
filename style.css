@@ -54,7 +54,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 140px;
+  min-height: 115px;
   gap: 24px;
 }
 
@@ -65,9 +65,8 @@ img {
 }
 
 .logo {
-  height: 120px;
+  height: 90px;
   width: auto;
-  image-rendering: -webkit-optimize-contrast;
 }
 
 .site-nav {
