@@ -102,6 +102,7 @@ img {
 
 .hero.hero-image {
   background: url('fahrzeug.png') center center / cover no-repeat;
+  background-attachment: fixed;
   color: var(--white);
   min-height: 112vh;
   position: relative;
