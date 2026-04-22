@@ -379,11 +379,8 @@ h3 {
 }
 
 @media (max-width: 960px) {
-  .hero-grid,
-  .grid-3,
-  .split,
-  .content-grid {
-    grid-template-columns: 1fr;
+  .hero.hero-image {
+    background-attachment: scroll;
   }
 
   .nav-wrap {
