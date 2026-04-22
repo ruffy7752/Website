@@ -103,7 +103,7 @@ img {
 .hero.hero-image {
   background: url('fahrzeug.png') center center / cover no-repeat;
   color: var(--white);
-  min-height: 100vh;
+  min-height: 112vh;
   position: relative;
   padding: 0;
 }
@@ -116,7 +116,7 @@ img {
     rgba(15, 23, 42, 0.14) 62%,
     rgba(15, 23, 42, 0.06) 100%
   );
-  min-height: 100vh;
+  min-height: 112vh;
   display: flex;
   align-items: center;
   padding-top: 110px;
