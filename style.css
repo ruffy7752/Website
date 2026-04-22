@@ -103,7 +103,7 @@ img {
 .hero.hero-image {
   background: url('fahrzeug.png') center center / cover no-repeat;
   color: var(--white);
-  min-height: 780px;
+  min-height: 100vh;
   position: relative;
   padding: 0;
 }
@@ -116,10 +116,11 @@ img {
     rgba(15, 23, 42, 0.14) 62%,
     rgba(15, 23, 42, 0.06) 100%
   );
-  min-height: 780px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 110px;
+  padding-bottom: 40px;
 }
 
 .hero-grid {
@@ -406,7 +407,7 @@ h3 {
 
   .hero.hero-image,
   .hero-overlay {
-    min-height: 620px;
+    min-height: 100vh;
   }
 
   .site-header-overlay {
