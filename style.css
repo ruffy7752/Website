@@ -54,7 +54,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 82px;
+  min-height: 110px;
   gap: 24px;
 }
 
