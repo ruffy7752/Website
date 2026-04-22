@@ -61,11 +61,13 @@ img {
 .brand {
   display: flex;
   align-items: center;
+  padding: 8px 0;
 }
 
 .logo {
   height: 120px;
   width: auto;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .site-nav {
