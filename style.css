@@ -95,10 +95,23 @@ img {
   color: var(--primary);
 }
 
-.hero {
-  background: linear-gradient(135deg, #0f172a 0%, #153d7a 58%, #0E4FAF 100%);
+.hero.hero-image {
   color: var(--white);
-  padding: 110px 0 95px;
+  min-height: 720px;
+  position: relative;
+  padding: 0;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.78) 0%,
+    rgba(15, 23, 42, 0.55) 38%,
+    rgba(15, 23, 42, 0.22) 100%
+  );
+  min-height: 720px;
+  display: flex;
+  align-items: center;
 }
 
 .hero-grid {
@@ -118,7 +131,7 @@ img {
 }
 
 .hero .eyebrow {
-  color: #c7ddff;
+  color: #dbeafe;
 }
 
 h1, h2, h3 {
@@ -148,7 +161,7 @@ h3 {
 .lead {
   font-size: 19px;
   max-width: 720px;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.94);
 }
 
 .hero-actions {
@@ -380,5 +393,10 @@ h3 {
 
   .logo {
     height: 82px;
+  }
+
+  .hero.hero-image,
+  .hero-overlay {
+    min-height: 620px;
   }
 }
