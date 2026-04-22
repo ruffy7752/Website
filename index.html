@@ -14,22 +14,22 @@
         <img src="BAU (2500 x 2500 px).svg" alt="AS Bau Pfalz Logo" class="logo" />
       </a>
       <nav class="site-nav">
-  <a href="index.html">Startseite</a>
-  <a href="ueber-uns.html">Über uns</a>
-  <a href="leistungen.html">Leistungen</a>
-  <a href="referenzen.html">Referenzen</a>
-  <a href="neuigkeiten.html">Neuigkeiten</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+        <a href="index.html" class="active">Startseite</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="referenzen.html">Referenzen</a>
+        <a href="neuigkeiten.html">Neuigkeiten</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-image">
+    <section class="hero hero-image" id="hero-banner">
       <div class="hero-overlay">
         <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">AS Bau Pfalz</p>
+          <div class="hero-content">
+            <p class="eyebrow">AS BAU PFALZ</p>
             <h1>Trockenbau, Akustikbau und Brandschutz aus der Pfalz</h1>
             <p class="lead">
               Wir stehen für saubere Ausführung, termingerechte Umsetzung und professionelle Lösungen
@@ -115,10 +115,10 @@
     <section class="section">
       <div class="container split">
         <div class="card soft">
-          <p class="eyebrow">Rezensionen</p>
+          <p class="eyebrow">Referenzen</p>
           <h2>Vertrauen durch gute Arbeit</h2>
           <p>Ein guter Eindruck entsteht nicht nur durch Worte, sondern durch Zuverlässigkeit, saubere Ausführung und professionelle Zusammenarbeit.</p>
-          <a class="text-link" href="rezensionen.html">Mehr erfahren</a>
+          <a class="text-link" href="referenzen.html">Mehr erfahren</a>
         </div>
 
         <div class="card soft">
@@ -151,22 +151,39 @@
       </div>
     </div>
   </footer>
+
   <script>
-  window.addEventListener('scroll', function () {
-    const hero = document.querySelector('.hero.hero-image');
-    if (!hero) return;
+    (function () {
+      const hero = document.getElementById('hero-banner');
+      if (!hero) return;
 
-    const rect = hero.getBoundingClientRect();
-    const heroTop = window.scrollY + rect.top;
-    const heroHeight = hero.offsetHeight;
-    const scrollY = window.scrollY;
+      let ticking = false;
 
-    if (scrollY <= heroTop + heroHeight) {
-      const speed = 0.35;
-      const yPos = (scrollY - heroTop) * speed;
-      hero.style.backgroundPosition = `center ${yPos}px`;
-    }
-  });
-</script>
+      function updateParallax() {
+        const scrollY = window.scrollY || window.pageYOffset;
+        const rect = hero.getBoundingClientRect();
+        const heroTop = scrollY + rect.top;
+        const heroHeight = hero.offsetHeight;
+        const distance = scrollY - heroTop;
+
+        if (scrollY <= heroTop + heroHeight) {
+          const speed = 0.35;
+          const yPos = distance * speed;
+          hero.style.backgroundPosition = `center ${yPos}px`;
+        }
+
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      });
+
+      updateParallax();
+    })();
+  </script>
 </body>
 </html>
