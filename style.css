@@ -92,7 +92,7 @@ img {
   font-size: 15px;
   transition: 0.2s ease;
   white-space: nowrap;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .site-nav a.active,
@@ -254,9 +254,29 @@ h3 {
   font-size: 17px;
 }
 
+.section-intro {
+  padding-top: 120px;
+}
+
+.section-head-center {
+  text-align: center;
+  margin: 0 auto 46px;
+}
+
+.section-head-center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -271,6 +291,44 @@ h3 {
   font-size: 16px;
 }
 
+.card-service,
+.card-highlight,
+.card-stat {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-service:hover,
+.card-highlight:hover,
+.card-stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(17, 24, 39, 0.10);
+}
+
+.card-service {
+  min-height: 220px;
+}
+
+.card-stat {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-stat h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.stat-number {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.2;
+  margin: 0;
+}
+
 .soft {
   background: #F8FAFC;
 }
@@ -279,6 +337,23 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+.split-highlight {
+  align-items: stretch;
+}
+
+.card-highlight {
+  padding: 36px;
+}
+
+.card-highlight h2 {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.card-highlight p {
+  margin-bottom: 18px;
 }
 
 .text-link {
@@ -381,6 +456,7 @@ h3 {
 @media (max-width: 960px) {
   .hero-grid,
   .grid-3,
+  .grid-4,
   .split,
   .content-grid {
     grid-template-columns: 1fr;
