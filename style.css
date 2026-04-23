@@ -99,6 +99,15 @@ img {
 .site-nav a:hover {
   color: #004aad;
 }
+.contact-nav-dark a {
+  color: #111827;
+  text-shadow: none;
+}
+
+.contact-nav-dark a.active,
+.contact-nav-dark a:hover {
+  color: #004aad;
+}
 
 .hero.hero-image {
   background: url('fahrzeug.png') center 0 / cover no-repeat;
