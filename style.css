@@ -717,6 +717,21 @@ h3 {
   flex-shrink: 0;
   font-weight: 700;
 }
+.label-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  color: #004aad;
+  flex-shrink: 0;
+  font-weight: 700;
+}
 @media (max-width: 1200px) {
   .grid-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
