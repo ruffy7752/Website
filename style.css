@@ -656,10 +656,24 @@ h3 {
   color: var(--dark);
 }
 
+.contact-page-note p,
+.contact-page-note ul,
+.contact-page-note li {
+  color: #004aad;
+}
+
+.contact-page-note p {
+  margin: 0;
+  padding-left: 0;
+}
+
+.contact-page-note p + p {
+  margin-top: 6px;
+}
+
 .contact-page-note ul {
   margin: 0;
   padding-left: 18px;
-  color: var(--muted);
 }
 
 .contact-page-note li {
