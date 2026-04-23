@@ -909,7 +909,86 @@ h3 {
   flex-shrink: 0;
   font-weight: 700;
 }
+.contact-form-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
 
+.contact-form-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+  padding: 36px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--dark);
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #D0D5DD;
+  border-radius: 14px;
+  padding: 16px 18px;
+  font: inherit;
+  font-size: 16px;
+  color: var(--dark);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input {
+  min-height: 58px;
+}
+
+.form-group textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.10);
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0 24px;
+}
+
+.form-check input {
+  margin-top: 4px;
+}
+
+.form-check label {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.form-submit-button {
+  min-width: 240px;
+  min-height: 56px;
+  font-size: 17px;
+}
+
+.contact-page-card {
+  padding: 36px;
+}
 @media (max-width: 960px) {
   .contact-page-grid {
     grid-template-columns: 1fr;
