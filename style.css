@@ -599,7 +599,43 @@ h3 {
 .footer-links a:hover {
   color: #BFDBFE;
 }
+.project-card {
+  padding: 0;
+  overflow: hidden;
+}
 
+.project-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
+
+.project-content {
+  padding: 26px;
+}
+
+.project-content h3 {
+  margin-bottom: 8px;
+}
+
+.project-subline {
+  color: #004aad;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
 /* Responsive */
 @media (max-width: 1200px) {
   .grid-4 {
