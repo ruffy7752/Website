@@ -31,7 +31,7 @@
         <h1>Nehmen Sie Kontakt mit uns auf</h1>
         <p>
           Sie planen ein Projekt oder haben Fragen zu unseren Leistungen?
-          Schreiben Sie uns gerne oder rufen Sie uns direkt an.
+          Schreiben Sie uns gerne direkt über das Formular oder rufen Sie uns an.
         </p>
       </div>
     </section>
@@ -39,28 +39,28 @@
     <section class="section">
       <div class="container contact-page-grid">
         <article class="card contact-page-card">
-  <h2>Kontaktdaten</h2>
+          <h2>Kontaktdaten</h2>
 
-  <div class="contact-page-list">
-    <div class="contact-page-item">
-      <strong class="label-with-icon"><span class="label-icon">☎</span><span>Telefon</span></strong>
-      <p>06322 91 99 99-4</p>
-      <p>0172 602 18 15</p>
-    </div>
+          <div class="contact-page-list">
+            <div class="contact-page-item">
+              <strong class="label-with-icon"><span class="label-icon">☎</span><span>Telefon</span></strong>
+              <p>06322 91 99 99-4</p>
+              <p>0172 602 18 15</p>
+            </div>
 
-    <div class="contact-page-item">
-      <strong class="label-with-icon"><span class="label-icon">✉</span><span>E-Mail</span></strong>
-      <p class="single-line">kontakt@as-bau-pfalz.com</p>
-    </div>
+            <div class="contact-page-item">
+              <strong class="label-with-icon"><span class="label-icon">✉</span><span>E-Mail</span></strong>
+              <p class="single-line">kontakt@as-bau-pfalz.com</p>
+            </div>
 
-    <div class="contact-page-item">
-      <strong class="label-with-icon"><span class="label-icon">⌘</span><span>Adresse</span></strong>
-      <p>AS Bau Pfalz</p>
-      <p>Im Rustengut 55</p>
-      <p>67098 Bad Dürkheim</p>
-    </div>
-  </div>
-</article>
+            <div class="contact-page-item">
+              <strong class="label-with-icon"><span class="label-icon">⌘</span><span>Adresse</span></strong>
+              <p>AS Bau Pfalz</p>
+              <p>Im Rustengut 55</p>
+              <p>67098 Bad Dürkheim</p>
+            </div>
+          </div>
+        </article>
 
         <article class="card contact-page-card">
           <h2>Direkte Anfrage</h2>
@@ -74,16 +74,16 @@
           </p>
 
           <div class="contact-page-actions">
-            <a class="button" href="tel:+491726021815">Jetzt anrufen</a>
+            <a class="button" href="tel:+4963229199994">Jetzt anrufen</a>
             <a class="button button-secondary contact-button-dark" href="mailto:kontakt@as-bau-pfalz.com">E-Mail senden</a>
           </div>
 
           <div class="contact-page-note">
-  <strong class="label-with-icon"><span class="label-icon">⌖</span><span>Einsatzgebiet</span></strong>
-  <p>Bad Dürkheim</p>
-  <p>Ludwigshafen</p>
-  <p>Mannheim und Umgebung</p>
-</div>
+            <strong class="label-with-icon"><span class="label-icon">⌖</span><span>Einsatzgebiet</span></strong>
+            <p>Bad Dürkheim</p>
+            <p>Ludwigshafen</p>
+            <p>Mannheim und Umgebung</p>
+          </div>
         </article>
       </div>
     </section>
@@ -91,11 +91,59 @@
     <section class="section section-alt">
       <div class="container">
         <div class="section-head section-head-center">
+          <p class="eyebrow">ANFRAGEFORMULAR</p>
+          <h2>Schreiben Sie uns direkt über die Website</h2>
+          <p>
+            Nutzen Sie das Formular für Ihre Anfrage. Wir melden uns schnellstmöglich bei Ihnen zurück.
+          </p>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form action="https://formsubmit.co/kontakt@as-bau-pfalz.com" method="POST" class="contact-form-card">
+            <input type="hidden" name="_subject" value="Neue Anfrage über die Website AS Bau Pfalz">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+            </div>
+
+            <div class="form-group">
+              <label for="betreff">Betreff</label>
+              <input type="text" id="betreff" name="betreff" placeholder="Worum geht es?">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nachricht *</label>
+              <textarea id="message" name="message" rows="7" placeholder="Ihre Nachricht..." required></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">
+                Ich habe die Datenschutzerklärung zur Kenntnis genommen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.
+              </label>
+            </div>
+
+            <button type="submit" class="button form-submit-button">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head-center">
           <p class="eyebrow">STANDORT</p>
           <h2>Unser Standort in Bad Dürkheim</h2>
           <p>
-            Hier finden Sie unsere Firmenadresse. Für Rückfragen oder Terminabsprachen
-            kontaktieren Sie uns gerne vorab.
+            Hier finden Sie unsere Firmenadresse. Für Rückfragen oder Terminabsprachen kontaktieren Sie uns gerne vorab.
           </p>
         </div>
 
