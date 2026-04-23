@@ -447,10 +447,10 @@ h3 {
 
 .contact-cta-action {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-width: 220px;
-  height: 100%;
+  padding-top: 20px;
 }
 
 .page-hero {
@@ -567,6 +567,7 @@ h3 {
   .contact-cta-action {
     width: 100%;
     justify-content: flex-start;
+    padding-top: 0;
   }
 
   .contact-cta-item .single-line {
