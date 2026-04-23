@@ -669,7 +669,29 @@ h3 {
 .contact-page-note li:last-child {
   margin-bottom: 0;
 }
+.contact-page-item .icon-phone::before,
+.contact-page-item .icon-mail::before,
+.contact-page-item .icon-location::before,
+.contact-page-note .icon-location::before {
+  color: #004aad;
+}
 
+.contact-page-item ul,
+.contact-page-item li,
+.contact-page-item p,
+.contact-page-note ul,
+.contact-page-note li {
+  color: #004aad;
+}
+
+.contact-page-item p {
+  margin: 0;
+  padding-left: 0;
+}
+
+.contact-page-item p + p {
+  margin-top: 6px;
+}
 .map-card {
   padding: 0;
   overflow: hidden;
