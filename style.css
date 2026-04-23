@@ -391,66 +391,111 @@ h3 {
   gap: 22px;
 }
 
-.contact-cta-box {
-  align-items: flex-start;
+.contact-panel {
+  margin-top: 10px;
 }
 
-.contact-cta-content {
-  max-width: 760px;
+.contact-panel-card {
+  background: var(--dark);
+  color: var(--white);
+  border-radius: 22px;
+  padding: 42px;
+  box-shadow: var(--shadow);
 }
 
-.contact-cta-details {
+.contact-panel-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 26px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 34px;
+  align-items: start;
 }
 
-.contact-cta-item {
+.contact-panel-left h2,
+.contact-panel-right h3 {
+  color: var(--white);
+}
+
+.contact-panel-lead {
+  color: rgba(255,255,255,0.88);
+  max-width: 760px;
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.contact-info-list {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-info-row {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 14px;
   padding: 18px;
 }
 
-.contact-cta-item strong {
+.contact-info-row strong {
   display: block;
   color: var(--white);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
-.contact-cta-item p {
-  margin: 0;
-  color: rgba(255,255,255,0.82);
+.contact-info-row p,
+.contact-info-row li {
+  color: rgba(255,255,255,0.84);
 }
 
-.contact-cta-item ul {
+.contact-info-row p {
+  margin: 0;
+}
+
+.contact-info-row ul {
   margin: 0;
   padding-left: 18px;
-  color: rgba(255,255,255,0.82);
 }
 
-.contact-cta-item li {
+.contact-info-row li {
   margin-bottom: 6px;
 }
 
-.contact-cta-item li:last-child {
+.contact-info-row li:last-child {
   margin-bottom: 0;
 }
 
-.contact-cta-item .single-line {
+.contact-side-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 22px 0 24px;
+}
+
+.contact-side-box strong {
+  display: block;
+  color: var(--white);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-side-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.contact-side-box li {
+  color: rgba(255,255,255,0.84);
+  margin-bottom: 6px;
+}
+
+.contact-side-box li:last-child {
+  margin-bottom: 0;
+}
+
+.single-line {
   white-space: nowrap;
   word-break: normal;
   overflow-wrap: normal;
-}
-
-.contact-cta-action {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-width: 220px;
-  padding-top: 20px;
 }
 
 .page-hero {
