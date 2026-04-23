@@ -1064,3 +1064,16 @@ h3 {
     padding: 28px;
   }
 }
+@media (max-width: 960px) {
+  .contact-form-card {
+    padding: 24px;
+  }
+
+  .contact-page-card {
+    padding: 26px;
+  }
+
+  .form-submit-button {
+    width: 100%;
+  }
+}
