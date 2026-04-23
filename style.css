@@ -704,17 +704,18 @@ h3 {
 .label-with-icon {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  column-gap: 14px;
 }
 
 .label-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
+  min-width: 22px;
   color: #004aad;
   flex-shrink: 0;
   font-weight: 700;
+  margin-right: 2px;
 }
 
 @media (max-width: 1200px) {
