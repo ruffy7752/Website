@@ -416,13 +416,33 @@ h3 {
 .contact-cta-item strong {
   display: block;
   color: var(--white);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: 16px;
 }
 
 .contact-cta-item p {
   margin: 0;
   color: rgba(255,255,255,0.82);
+}
+
+.contact-cta-item ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.82);
+}
+
+.contact-cta-item li {
+  margin-bottom: 6px;
+}
+
+.contact-cta-item li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-cta-item .single-line {
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 .contact-cta-action {
@@ -547,6 +567,10 @@ h3 {
   .contact-cta-action {
     width: 100%;
     justify-content: flex-start;
+  }
+
+  .contact-cta-item .single-line {
+    white-space: normal;
   }
 
   .logo {
