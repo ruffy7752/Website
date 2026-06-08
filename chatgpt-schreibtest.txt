@@ -1,0 +1,1 @@
+Schreibtest erfolgreich. Diese Datei kann nach dem Test wieder gelöscht werden.
